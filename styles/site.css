@@ -1,0 +1,310 @@
+body{
+  margin: 0;
+  background-color: #171717;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+}
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+  font-size: larger;
+}
+nav{
+  display:flex;
+  flex-direction: row;
+  background-color: #222222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 50px;
+}
+.navbuttons{
+  display:flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right:5%;
+}
+.navbutton{
+  display: flex;
+  flex-direction: row;
+  margin: none;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: x-small;
+}
+.navbutton:hover{
+  background-color: #171717;
+  color: whitesmoke;
+}
+.highlighted{
+  background-color: #171717;
+  color: whitesmoke;
+}
+.logoandtext{
+  display:flex;
+  flex-direction: row;
+}
+.logoandtext h2{
+  display: none;
+}
+#logobutton{
+  background: none;
+  border:none;
+  text-decoration: none;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0;
+}
+#logobutton img{
+  max-width: 70px;
+  padding-top: 5px;
+}
+#logobutton:hover{
+  background-color: #171717;
+  color: whitesmoke;
+}
+#discordbutton{
+  display:none;
+  border: whitesmoke;
+  background-color: rgba(0,0,0,0);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#discordbutton img{
+  max-width: 70px;
+}
+#discordbutton:hover{
+  background-color: #171717;
+}
+main{
+  display:flex;
+  flex-direction: column;
+}
+.contentbox{
+  display:flex;
+  flex-direction: column;
+  background-color: #444444;
+  margin-top:auto;
+  margin-bottom:3%;
+  padding: 3%;
+  border-radius:15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contentbox h3{
+  font-size: x-large;
+  margin-top: 0;
+}
+.maincontent{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+}
+.maincontent h1{
+  display:flex;
+  flex-direction: column;
+}
+.maincontent p{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.boardbox{
+  display: flex;
+  flex-direction: row;
+  background-color: #444444;
+}
+.boardpicture{
+  display:flex;
+  flex-direction:column;
+  padding: 3%;
+}
+.boardtext{
+  display:flex;
+  flex-direction: column;
+  padding: 3%;
+}
+.boardbox ul{
+  list-style: none;
+  padding-inline-start: 0;
+}
+.boardbox ul li{
+  list-style: none;
+}
+.grid{
+  display:flex;
+  flex-direction: column;
+}
+.gridrow{
+  display:flex;
+  flex-direction: column;
+  margin-top: none;
+  margin-bottom: 3%;
+}
+.boardpicture{
+  max-width: 200px;
+}
+.footerbox{
+  display:flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #DA0037;
+}
+.footertext{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 0;
+}
+.footertext h2{
+  font-size: small;
+}
+.footerbuttons{
+  display:flex;
+  flex-direction: column;
+}
+.footerbuttons button{
+  display:flex;
+  flex-direction: row;
+  background: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.quicklink img{
+  max-width: 50px;
+}
+.quicklink{
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.quicklinkrow{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.alllinks{
+  display:flex;
+  flex-direction: row;
+  /* background-color: #DA0037; */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  padding: 10px;
+  border-radius: 7px;
+}
+.alllinks button{
+  margin: auto;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background: none;
+}
+.secondrowlinks{
+  display: flex;
+  flex-direction: row;
+}
+.alllinks .secondrowlinks{
+  display: none;
+}
+.footerbox .footerbuttons .quicklink img{
+  max-width: 30px;
+}
+@media (min-width: 700px){
+  .footertext h2{
+    font-size: larger;
+  }
+  .secondrowlinks{
+    display: none;
+  }
+  .alllinks .secondrowlinks{
+    display: flex;
+  }
+  nav{
+    justify-content: center;
+  }
+  .logoandtext{
+    margin-right: 5%;
+  }
+  .logoandtext h2{
+    display: flex;
+  }
+  #logobutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #logobutton img{
+    max-width: none;
+    padding-top: none;
+  }
+  .navbuttons{
+    margin-left:0;
+    margin-right:0;
+  }
+  .navbutton{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: medium;
+  }
+  #discordbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+    margin-right:0%;
+  }
+  .contentbox{
+    margin-left: 15%;
+    margin-right:15%;
+  }
+  main h2{
+    margin-left: 15%;
+  }
+  .boardbox{
+    margin-left:0;
+    margin-right: auto;
+  }
+  .gridrow{
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #444444;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .grid{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .boardtext{
+    margin-right: 0;
+  }
+  .footertext{
+    margin: auto;
+  }
+  .footerbuttons{
+    margin: auto;
+    flex-direction: row;
+  }
+  .maincontent p{
+    text-align: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footerbox .footerbuttons .quicklink img{
+    max-width: 50px;
+  }
+}

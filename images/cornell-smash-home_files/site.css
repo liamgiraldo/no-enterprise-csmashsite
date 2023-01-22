@@ -1,0 +1,107 @@
+nav{
+  display:flex;
+  flex-direction: row;
+  background-color: aquamarine;
+}
+.navbuttons{
+  display:flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right:5%;
+}
+.navbutton{
+  background-color: aquamarine;
+  border:none;
+}
+.navbutton:hover{
+  background-color: bisque;
+}
+.logoandtext{
+  display:flex;
+  flex-direction: row;
+}
+.logoandtext h1{
+  display:none;
+  margin:auto;
+}
+#logobutton{
+  background: none;
+  border:none;
+}
+#logobutton:hover{
+  background-color: gray;
+}
+#discordbutton{
+  display:none;
+  border: whitesmoke;
+  background-color: rgba(0,0,0,0);
+}
+#discordbutton:hover{
+  background-color: gray;
+}
+main{
+  display:flex;
+  flex-direction: column;
+}
+.contentbox{
+  display:flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin-top:auto;
+  margin-bottom:3%;
+  padding: 3%;
+  border-radius:3%;
+}
+.maincontent{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+}
+.maincontent h1{
+  display:flex;
+  flex-direction: column;
+}
+.maincontent p{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 700px){
+  nav{
+    justify-content: center;
+  }
+  .logoandtext{
+    margin-right: 5%;
+  }
+  .navbuttons{
+    margin-left:0;
+    margin-right:0;
+  }
+  .logoandtext h1{
+    display: flex;
+  }
+  .navbutton{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #discordbutton{
+    display: flex;
+    margin: auto;
+    margin-left:5%;
+    margin-right:0%;
+  }
+  #esports{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contentbox{
+    margin-left: 15%;
+    margin-right:15%;
+  }
+  main h2{
+    margin-left: 15%;
+  }
+
+}
