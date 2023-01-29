@@ -159,6 +159,7 @@ main{
   flex-direction: row;
   padding: 10px;
   background-color: #DA0037;
+  margin-top: 4%;
 }
 .footertext{
   display:flex;
@@ -222,6 +223,91 @@ main{
 .footerbox .footerbuttons .quicklink img{
   max-width: 30px;
 }
+.calendarbox{
+  display:flex;
+  flex-direction: column;
+  background-color: #111111;
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calendarbox h2{
+  display: flex;
+  margin: auto;
+  padding: 20px;
+}
+.tourneybox{
+  display: flex;
+  flex-direction: row;
+  background-color: #171717;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tourneybox img{
+  display: flex;
+  margin: auto;
+  max-width: 100px;
+  padding: 5px;
+}
+.tourneybox1 img{
+  display: flex;
+  margin: auto;
+  max-width: 100px;
+  padding: 5px;
+}
+.altbg{
+  background-color: #222222;
+}
+.tourneytext{
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+}
+.tourneybox a{
+  color: #C4D8F3;
+}
+.tourneybox a:hover{
+  color:white;
+}
+.tourneybox a:visited{
+  color:#D0A4FF;
+}
+.calendarbox a{
+  display: flex;
+  margin: auto;
+  padding-right: 20px;
+}
+.finished{
+  background-color: #151515;
+}
+.finished{
+  color: gray;
+}
+.tourneycarousel{
+  display: flex;
+  margin: auto;
+  background-color: #444444;
+  flex-direction: column;
+}
+.carouselimages{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+.carouselselect{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+}
+.carouselselect img{
+  display: flex;
+  margin: auto;
+  max-width: 10%;
+}
+.hidden{
+  display: none;
+}
 @media (min-width: 700px){
   .footertext h2{
     font-size: larger;
@@ -270,6 +356,10 @@ main{
   .contentbox{
     margin-left: 15%;
     margin-right:15%;
+  }
+  .tourneycarousel{
+    margin-left: 15%;
+    margin-right: 15%;
   }
   main h2{
     margin-left: 15%;
